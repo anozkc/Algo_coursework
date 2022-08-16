@@ -28,7 +28,7 @@ public class main extends JFrame {
             "<br>Enter the name of the Pipe in \"From\" and \"To\" textfield to join the two Nodes." +
             "<br>After creating all the Pipe Line, enter \"Source\" Pipe and \"Destination\" Pipe to" +
             "<br>Calculate the Shortest distance between them." +
-            "<br><br><i><b>Developed By :<font color=\"blue\"> Anjal Khadka</font>" +
+            "<br><br><i><b>Developed By :<font color=\"blue\"> ANOJ</font>" +
             "<br>Email : <font color=\"blue\"></font></i><b></html>";
 
 
@@ -58,7 +58,7 @@ public class main extends JFrame {
 
         String input = "";
 
-        BufferedReader reader = new BufferedReader(new FileReader("WaterSupplyGUI/src/GUI/info.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("src/GUI/info.txt"));
         String line = null;
         while ((line = reader.readLine()) != null) {
 
@@ -80,7 +80,7 @@ public class main extends JFrame {
 
         // RouteManagement Icon's Image
         try{
-            Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("WaterSupplyGUI/src/GUI/abc.png"));
+            Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("src/GUI/abc.png"));
             ImageIcon icon = new ImageIcon(image);
             setIconImage(icon.getImage());
         }catch(Exception e){}
@@ -92,7 +92,7 @@ public class main extends JFrame {
         quote.setForeground(Color.WHITE);
 
         quotePanel = new JPanel();
-        quotePanel.setBackground(new Color(234, 229, 9));
+        quotePanel.setBackground(new Color(255, 0, 0));
         quotePanel.add(quote);
         sidePanel = new JPanel();
         sidePanel.setBackground(new Color(44, 51, 51));
@@ -102,7 +102,7 @@ public class main extends JFrame {
 
         upperPanel = new JPanel();
         JLabel imagelabel = new JLabel();
-        imagelabel.setIcon(new ImageIcon("WaterSupplyGUI/src/GUI/city.png"));
+        imagelabel.setIcon(new ImageIcon("src/GUI/city.png"));
         upperPanel.setLayout(new BorderLayout());
         upperPanel.add(imagelabel);
 //        upperPanel.setBounds(0,0,1920,1080);
@@ -115,7 +115,7 @@ public class main extends JFrame {
         // Pink Panel
         resultLabel = new JLabel("Connect Pipe from Source to House...   ( Click HELP for More Information )", SwingConstants.CENTER);
         resultLabel.setFont(new Font("Nunito", Font.PLAIN, 20));
-        resultLabel.setForeground(Color.WHITE);
+        resultLabel.setForeground(Color.red);
 
         resultPanel = new JPanel();
         resultPanel.setLayout(new BorderLayout());
@@ -149,34 +149,34 @@ public class main extends JFrame {
 
         setDistance = new JButton("Set Distance");
         setDistance.setFont(new Font("Bell MT", Font.BOLD, 14));
-        setDistance.setBackground(new Color(238, 209, 128));
+        setDistance.setBackground(new Color(255, 165, 0));
         SaveData = new JButton("Save Data");
         SaveData.setFont(new Font("Bell MT", Font.BOLD, 14));
-        SaveData.setBackground(new Color(238, 209, 128));
+        SaveData.setBackground(new Color(255, 165, 0));
         calculate = new JButton("Short Distance");
         calculate.setFont(new Font("Bell MT", Font.BOLD, 14));
-        calculate.setBackground(new Color(238, 209, 128));
+        calculate.setBackground(new Color(255, 165, 0));
         start = new JButton("Begin");
         start.setFont(new Font("Bell MT", Font.BOLD, 25));
-        start.setBackground(new Color(232, 170, 66));
+        start.setBackground(new Color(255, 165, 0));
         reset = new JButton("Reset");
         reset.setFont(new Font("Bell MT", Font.BOLD, 25));
         reset.setHorizontalAlignment(SwingConstants.CENTER);
         reset.setPreferredSize(new Dimension(100, 200));
-        reset.setBackground(new Color(238, 209, 128));
+        reset.setBackground(new Color(255, 165, 0));
         logout = new JButton("Quit");
         logout.setFont(new Font("Bell MT", Font.BOLD, 25));
         logout.setHorizontalAlignment(SwingConstants.CENTER);
         logout.setPreferredSize(new Dimension(100, 200));
-        logout.setBackground(new Color(209, 81, 45));
+        logout.setBackground(new Color(255, 165, 0));
         Info = new JButton("See Information");
         Info.setFont(new Font("Bell MT", Font.BOLD, 20));
-        Info.setBackground(new Color(238, 209, 128));
+        Info.setBackground(new Color(255, 165, 0));
         Info.setHorizontalAlignment(SwingConstants.CENTER);
         Info.setPreferredSize(new Dimension(100, 200));
         help = new JButton("HELP");
         help.setFont(new Font("Bell MT", Font.BOLD, 25));
-        help.setBackground(new Color(238, 209, 128));
+        help.setBackground(new Color(255, 165, 0));
         help.setHorizontalAlignment(SwingConstants.CENTER);
         help.setPreferredSize(new Dimension(200, 200));
         helpLabel = new JLabel(helpMessage);
